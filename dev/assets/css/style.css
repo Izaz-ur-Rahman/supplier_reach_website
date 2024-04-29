@@ -270,6 +270,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.unique_color{
+  color: #3ac0d7;
+}
+
 
 hr {
   margin: 4.5rem 0;
@@ -878,24 +882,47 @@ progress {
   max-width: 100%;
   height: auto;
 }
-/* For desktop */
-@media (min-width: 768px) {
-  .hero_image {
-    width: 500px; /* Set the width to 636px */
-    height: auto; /* Allow the height to adjust proportionally */
-    margin: 0px auto 20px; /* Center the image horizontally and add margin top and bottom */
+  /* For desktop */
+  @media (min-width: 768px) {
+    .hero_image {
+      width: 500px; /* Set the width to 636px */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin: 0px auto 20px; /* Center the image horizontally and add margin top and bottom */
 
-    max-width: 100%; /* Set a maximum width */
+      max-width: 100%; /* Set a maximum width */
+    }
+  }
+
+  /* For mobile and tablet */
+  @media (max-width: 767px) {
+    .hero_image {
+      width: 100%; /* Set the width to 100% to fill the container */
+      max-width: none; /* Remove the maximum width constraint */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin: 0 auto 20px; /* Center the image horizontally and add margin top and bottom */
+    }
+  }
+
+  /* For desktop */
+@media (min-width: 768px) {
+  .hero_img2 {
+    width: 953px; /* Increase the width */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin: 0 auto 20px; /* Center the image horizontally and add margin top and bottom */
+    max-width: 150%; /* Set a maximum width */
+    margin-left: -70px;
   }
 }
 
 /* For mobile and tablet */
 @media (max-width: 767px) {
-  .hero_image {
+  .hero_img2 {
     width: 100%; /* Set the width to 100% to fill the container */
     max-width: none; /* Remove the maximum width constraint */
     height: auto; /* Allow the height to adjust proportionally */
-    margin: 0 auto 20px; /* Center the image horizontally and add margin top and bottom */
+    margin: 0 auto 10px; /* Center the image horizontally and add margin top and bottom */
+    margin-top:0px;
+    margin-left: 10px;
   }
 }
 
@@ -25309,6 +25336,7 @@ mark {
   background-color: #3ac0d7;
   margin-bottom: -190px;
   max-width: 1210px;
+
 }
 
 
@@ -25385,7 +25413,7 @@ figure img {
   mask-repeat: no-repeat;
   height: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 200%;
   -webkit-mask-size: auto auto;
 }
 .img-mask.mask-1 img {
@@ -41347,4 +41375,25 @@ button[type="submit"]:hover {
 
 background-color: rgba(238,242,253,255);
 box-shadow: 0 4px 8px rgba(10, 30, 10, 0.1);
+}
+
+
+
+/* Media query for desktop screens */
+@media (min-width: 1024px) {
+  .for_home_page_footer_ml {
+      margin-left: 38px; /* Adjust the margin value as needed */
+  }
+}
+
+@media (max-width: 767px) {
+  .margin_adjustment {
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+  }
+}
+
+@media (max-width: 767px) {
+  .margin_adjustment2 {
+    margin-top: 90px; /* Adjust the margin-top value as needed */
+  }
 }
