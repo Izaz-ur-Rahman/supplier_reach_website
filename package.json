@@ -36,5 +36,10 @@
     "imagemin-jpeg-recompress": "~7.0.0",
     "imagemin-pngquant": "~9.0.2",
     "sass": "1.49.0"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "express": "^4.19.2",
+    "g": "^2.0.1"
   }
 }

@@ -86,7 +86,7 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     replace = require('gulp-replace'),
     touch = require('gulp-touch-cmd');
-    
+
 /* Server */
 var config = {
     server: {
@@ -444,3 +444,7 @@ gulp.task('default', gulp.series(
     'build:dist',
     gulp.parallel('webserver','watch')
 ));
+
+gulp.get("*",(req,res)=>{
+  res.sendFile(__dirname + "/404.html");
+})
